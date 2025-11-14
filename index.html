@@ -3,44 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>わらびのホームページ</title>
+    <title>Warabi Webpage</title>
 
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background: #1a1d23; /* 画像のような濃いグレー */
-            font-family: "Segoe UI", sans-serif;
-            color: #d0d8ff; /* 全体の文字色（青みがかった白） */
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f7f8fa;
+            color: #333;
         }
 
+        /* ヘッダー */
         header {
-            padding: 80px 20px;
+            background: linear-gradient(90deg, #4c8bf5, #6aa8ff);
+            color: white;
+            padding: 15px 20px;
             text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        /* コンテンツ部分 */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
         h1 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #5aa0ff; /* タイトルの青色 */
-            margin-bottom: 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #76b4ff;
-            border-left: 4px solid #76b4ff;
+            font-size: 28px;
+            border-left: 6px solid #4c8bf5;
             padding-left: 10px;
-            margin-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
         }
 
         a {
-            color: #7bb8ff;
+            color: #4c8bf5;
             text-decoration: none;
             font-weight: bold;
         }
@@ -49,18 +59,13 @@
             text-decoration: underline;
         }
 
-        .sns-links a {
-            display: block;
-            padding: 8px 0;
-            font-size: 18px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        /* フッター */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 15px 0;
+            color: #999;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -68,27 +73,28 @@
 <body>
 
     <header>
-        <h1>わらびのホームページ。</h1>
-        <p>ようこそ！</p>
+        わらびのホームページ。
     </header>
 
     <div class="container">
+        <h1>はじめまして、わらびです！</h1>
 
-        <h2>🧑‍🏫 自己紹介</h2>
-        <div class="card">
-            <p>はじめまして、わらびです！<br>
-            中3。受験生です。ゲーム、ガジェットが好きです。<br>
-            何個もiPhoneを買い集めていたりもします（笑）</p>
-        </div>
+        <p>
+            中3。受験生です。ゲーム、ガジェットが好きです！<br>
+            何個も iPhone を買い集めていたりします（笑）
+        </p>
 
-        <h2>🔗 SNSリンク</h2>
-        <div class="card sns-links">
-            <a href="https://twitter.com/0__wa__0" target="_blank">X</a>
-            <a href="https://discord.com/users/xb8n" target="_blank">Discord</a>
-            <a href="https://www.youtube.com/@user-rs-fbckw" target="_blank">YouTube</a>
-        </div>
-
+        <h2>リンク</h2>
+        <ul>
+            <li><a href="https://twitter.com/0__wa__0" target="_blank">X（Twitter）</a></li>
+            <li><a href="https://discord.com/users/xb8n" target="_blank">Discord</a></li>
+            <li><a href="https://www.youtube.com/@user-rs-fbckw" target="_blank">YouTube</a></li>
+        </ul>
     </div>
+
+    <footer>
+        © 2025 Warabi
+    </footer>
 
 </body>
 </html>
